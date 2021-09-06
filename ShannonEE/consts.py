@@ -1,0 +1,2 @@
+NORMAL_MODE = 0x424f4f54  # boot
+DUMP_MODE = 0x44554d50
