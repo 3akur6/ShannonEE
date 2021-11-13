@@ -1,0 +1,10 @@
+--- cpu_tcg.c	2021-11-13 02:25:11.642780400 +0000
++++ cpu_tcg_patch.c	2021-11-13 02:26:24.682780400 +0000
+@@ -632,6 +632,7 @@
+     { .name = "cortex-m33",  .initfn = cortex_m33_initfn,
+                              .class_init = arm_v7m_class_init },
+     { .name = "cortex-r5",   .initfn = cortex_r5_initfn },
++    { .name = "cortex-r7",   .initfn = cortex_r5_initfn },
+     { .name = "cortex-r5f",  .initfn = cortex_r5f_initfn },
+     { .name = "ti925t",      .initfn = ti925t_initfn },
+     { .name = "sa1100",      .initfn = sa1100_initfn },

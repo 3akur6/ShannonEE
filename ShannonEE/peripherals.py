@@ -1,7 +1,6 @@
 import re
 from avatar2 import *
 from avatar2.peripherals import *
-from nose.tools import *
 from pandare import *
 
 from .logger import *

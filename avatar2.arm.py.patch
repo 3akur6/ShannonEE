@@ -1,0 +1,21 @@
+--- arm.py	2021-11-12 02:31:05.324361700 +0000
++++ arm_patch.py	2021-11-12 02:29:52.194361700 +0000
+@@ -87,6 +87,18 @@
+ ARMV7M = ARM_CORTEX_M3
+ 
+ 
++class ARM_CORTEX_R7_THUMB(ARM_CORTEX_M3):
++    cpu_model = 'cortex-r7'
++    qemu_name = 'arm'
++    gdb_name = 'arm'
++
++
++class ARM_CORTEX_R7_ARM(ARM):
++    cpu_model = 'cortex-r7'
++    qemu_name = 'arm'
++    gdb_name = 'arm'
++
++
+ class ARMBE(ARM):
+     qemu_name = 'armeb'
+     capstone_mode = CS_MODE_BIG_ENDIAN

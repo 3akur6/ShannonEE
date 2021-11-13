@@ -1,0 +1,10 @@
+--- cpu.c	2021-11-12 03:57:49.394361700 +0000
++++ cpu_patch.c	2021-11-12 03:58:06.534361700 +0000
+@@ -1573,6 +1573,7 @@
+     { .name = "cortex-m4",   .initfn = cortex_m4_initfn,
+                              .class_init = arm_v7m_class_init },
+     { .name = "cortex-r5",   .initfn = cortex_r5_initfn },
++    { .name = "cortex-r7",   .initfn = cortex_r5_initfn },
+     { .name = "cortex-a7",   .initfn = cortex_a7_initfn },
+     { .name = "cortex-a8",   .initfn = cortex_a8_initfn },
+     { .name = "cortex-a9",   .initfn = cortex_a9_initfn },
